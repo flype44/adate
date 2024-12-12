@@ -84,11 +84,11 @@ int main() {
            "  UTC        - Display time in UTC.\n"
            "  FORMAT     - Custom output format (e.g., %%Y-%%m-%%d %%H:%%M:%%S).\n"
            "  DATE       - Parse and display a specific date/time.\n"
-           "               Supported formats:\n
+           "               Supported formats:\n"
            "                 - ISO 8601: YYYY-MM-DDTHH:MM:SS\n"
            "                 - RFC 2822: Day, DD Mon YYYY HH:MM:SS +ZZZZ\n"
            "                 - Custom: YYYY-MM-DD HH:MM:SS\n"
-           "  TIME       - Specify the time (used with DATE).\n
+           "  TIME       - Specify the time (used with DATE).\n"
            "  SET        - Set the system date/time to the provided date/time.\n"
            "  EPOCH      - Specify time as seconds since the Amiga epoch (1978-01-01).\n"
            "  HELP       - Display this help message.\n"
