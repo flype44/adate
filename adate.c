@@ -79,35 +79,35 @@ int main() {
        /*Help Option Seclected*/
 
     if (opts.help) {
-    printf("ADate v1.0 10/12/24 - Usage: adate [OPTIONS]\n");
-    printf("\nOPTIONS:\n");
-    printf("  UTC        - Display time in UTC.\n");
-    printf("  FORMAT     - Custom output format (e.g., %%Y-%%m-%%d %%H:%%M:%%S).\n");
-    printf("  DATE       - Parse and display a specific date/time.\n");
-    printf("               Supported formats:\n");
-    printf("                 - ISO 8601: YYYY-MM-DDTHH:MM:SS\n");
-    printf("                 - RFC 2822: Day, DD Mon YYYY HH:MM:SS +ZZZZ\n");
-    printf("                 - Custom: YYYY-MM-DD HH:MM:SS\n");
-    printf("  TIME       - Specify the time (used with DATE).\n");
-    printf("  SET        - Set the system date/time to the provided date/time.\n");
-    printf("  EPOCH      - Specify time as seconds since the Amiga epoch (1978-01-01).\n");
-    printf("  HELP       - Display this help message.\n");
-    printf("\nFORMAT SPECIFIERS:\n");
-    printf("  %%Y  - Year (4 digits)\n");
-    printf("  %%y  - Year (2 digits)\n");
-    printf("  %%m  - Month (01–12)\n");
-    printf("  %%d  - Day of the month (01–31)\n");
-    printf("  %%H  - Hour (00–23)\n");
-    printf("  %%M  - Minute (00–59)\n");
-    printf("  %%S  - Second (00–59)\n");
-    printf("  %%a  - Abbreviated weekday name (e.g., Sun)\n");
-    printf("  %%A  - Full weekday name (e.g., Sunday)\n");
-    printf("  %%n  - Newline\n");
-    printf("  %%t  - Tab\n");
-    printf("\nEXAMPLES:\n");
-    printf("  adate date=\"2024-12-10T14:23:45\"\n");
-    printf("  adate date=\"Tue, 10 Dec 2024 14:23:45 +0100\"\n");
-    printf("  adate epoch=\"@0\"\n");
+    printf("ADate v1.0 10/12/24 - Usage: adate [OPTIONS]\n"
+           "\nOPTIONS:\n"
+           "  UTC        - Display time in UTC.\n"
+           "  FORMAT     - Custom output format (e.g., %%Y-%%m-%%d %%H:%%M:%%S).\n"
+           "  DATE       - Parse and display a specific date/time.\n"
+           "               Supported formats:\n
+           "                 - ISO 8601: YYYY-MM-DDTHH:MM:SS\n"
+           "                 - RFC 2822: Day, DD Mon YYYY HH:MM:SS +ZZZZ\n"
+           "                 - Custom: YYYY-MM-DD HH:MM:SS\n"
+           "  TIME       - Specify the time (used with DATE).\n
+           "  SET        - Set the system date/time to the provided date/time.\n"
+           "  EPOCH      - Specify time as seconds since the Amiga epoch (1978-01-01).\n"
+           "  HELP       - Display this help message.\n"
+           "\nFORMAT SPECIFIERS:\n"
+           "  %%Y  - Year (4 digits)\n"
+           "  %%y  - Year (2 digits)\n"
+           "  %%m  - Month (01–12)\n"
+           "  %%d  - Day of the month (01–31)\n"
+           "  %%H  - Hour (00–23)\n"
+           "  %%M  - Minute (00–59)\n"
+           "  %%S  - Second (00–59)\n"
+           "  %%a  - Abbreviated weekday name (e.g., Sun)\n"
+           "  %%A  - Full weekday name (e.g., Sunday)\n"
+           "  %%n  - Newline\n"
+           "  %%t  - Tab\n"
+           "\nEXAMPLES:\n"
+           "  adate date=\"2024-12-10T14:23:45\"\n"
+           "  adate date=\"Tue, 10 Dec 2024 14:23:45 +0100\"\n"
+           "  adate epoch=\"@0\"\n");
     return RETURN_OK;
 }
 
