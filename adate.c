@@ -382,7 +382,7 @@ BOOL parse_date_string(const char *datestr, int *year, int *month, int *day, int
         calculate_year_month_day(tv->tv_secs / 86400, year, month, day); // Days since 1978-01-01
         *hours = (tv->tv_secs % 86400) / 3600; // Extract hours
         *minutes = (tv->tv_secs % 3600) / 60;  // Extract minutes
-        int seconds = tv->tv_secs % 60;        // Extract seconds
+        seconds = tv->tv_secs % 60;        // Extract seconds
         return TRUE;
     }
 
@@ -524,7 +524,7 @@ BOOL parse_date_string(const char *datestr, int *year, int *month, int *day, int
     // Extract time of day (hours, minutes, seconds) from tv_secs
     *hours = (tv->tv_secs % 86400) / 3600;
     *minutes = (tv->tv_secs % 3600) / 60;
-    int seconds = tv->tv_secs % 60;
+    seconds = tv->tv_secs % 60;
     return TRUE;
 }
 
